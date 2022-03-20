@@ -1,0 +1,28 @@
+
+
+html,body{
+    height:100%;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.jasdlkfj{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.jjdefrdf{
+    margin: 20px;
+}
+
+button{
+    margin-left: 50px;
+    width: 20%;
+    height: 20%;
+}
