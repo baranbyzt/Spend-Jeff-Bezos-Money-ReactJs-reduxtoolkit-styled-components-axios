@@ -4,32 +4,44 @@ import { İtemsCards,İmg,İnnerDiv,
 } from "../style/CardsComponentStyled";
 
 import React,{useEffect,useState} from 'react'
-import { useDispatch } from 'react-redux';
-import {changePieceNegative,changePiecePozitif,
+import { useDispatch,useSelector } from 'react-redux';
+import {changePieceNegative,changePiecePozitif,selectMoney,
     changeMainMoneyPozitif,changeMainMoneyNegative
 } from '../redux/cardSlice'
 
 const CardsComponent = (props) => {
     const dispatch = useDispatch();
+    const mainMoney = useSelector(selectMoney)
 
     const plusButton = () =>
     {
-                  dispatch(changeMainMoneyPozitif(props.data.fiyat))
-        dispatch(changePiecePozitif([props.data.id,'kerem']))   
+        if(mainMoney >= props.data.fiyat){
+                dispatch(changeMainMoneyNegative(props.data.fiyat))
+                 dispatch(changePiecePozitif([props.data.id,'kerem']))  
+        }else{
+
+        }
+                  
     }
  const negativeButton = () =>
     {
-    dispatch(changeMainMoneyNegative(props.data.fiyat))
+
+        if(props.data.aded > 0){
+dispatch(changeMainMoneyPozitif(props.data.fiyat))
             dispatch(changePieceNegative([props.data.id,'kerem']))
+        }else{
+
+        }
+    
     }
 
     return ( 
         <İtemsCards>
       
-      <İmg src={props.data.img} />
+      <İmg src={props.data.img}  />
 <div>
     <P>{props.data.title}</P>
-    <P>{props.data.fiyat}</P>
+    <P>{(props.data.fiyat).toLocaleString('ar-US')} $</P>
     <İnnerDiv>
     <Button onClick={plusButton}>+</Button>
     <P>{props.data.aded}</P>

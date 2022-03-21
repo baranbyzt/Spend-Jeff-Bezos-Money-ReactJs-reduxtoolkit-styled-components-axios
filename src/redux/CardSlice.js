@@ -22,16 +22,16 @@ export const cardSlice = createSlice({
         },
         {
             id:3,
-            title: 'Smartphone',
-            img: "https://neal.fun/spend/images/smartphone.jpg",
-            fiyat: 700,
+            title: 'iPhone 12 Pro Max 512 GB',
+            img: "https://128milyardolar.net/_assets/img/urun/iphone12.jpg",
+            fiyat: 2500,
             aded: 0
         },
         {
             id:4,
-            title: 'Luxury Wine',
-            img: "https://neal.fun/spend/images/luxury-wine.jpg",
-            fiyat: 11000,
+            title: 'Cargo Ship',
+            img: "https://128milyardolar.net/_assets/img/urun/gemicik.jpg",
+            fiyat: 35000000,
             aded: 0
         },
         {
@@ -57,9 +57,9 @@ export const cardSlice = createSlice({
         },
         {
             id:8,
-            title: 'Skyscraper',
-            img: "https://neal.fun/spend/images/skyscraper.jpg",
-            fiyat: 750000000,
+            title: 'intercity road',
+            img: "https://128milyardolar.net/_assets/img/urun/duble.jpg",
+            fiyat: 11000000000,
             aded: 0
         },
         {
@@ -125,7 +125,7 @@ export const cardSlice = createSlice({
         changePieceNegative: (state,action) => {
            const reis = action.payload[0]
            const dd = reis -1
-          state.items[dd].aded -= 1
+          state.items[dd].aded -= 1 
         },
         changeMainMoneyNegative: (state,action) => {
             state.mainmoney -= action.payload
@@ -145,3 +145,4 @@ export const {
     changePiecePozitif,changePieceNegative
 } = cardSlice.actions;
 export default cardSlice.reducer;
+
