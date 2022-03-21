@@ -1,52 +1,43 @@
 
+import { İtemsCards,İmg,İnnerDiv,
+    P,Button
+} from "../style/CardsComponentStyled";
 
 import React,{useEffect,useState} from 'react'
-import { useDispatch ,useSelector} from 'react-redux';
-import {azzaltFunciton,arttirtFunciton,arttiraded,paradandus} from '../redux/cardSlice'
-import { selectData,selectDatapara } from '../redux/cardSlice';
-
+import { useDispatch } from 'react-redux';
+import {changePieceNegative,changePiecePozitif,
+    changeMainMoneyPozitif,changeMainMoneyNegative
+} from '../redux/cardSlice'
 
 const CardsComponent = (props) => {
-const [benimdatam,useBenimdatam] = useState(null)
+    const dispatch = useDispatch();
 
-const gelendeger = useSelector(selectDatapara); // ana parayı göstertir.
-const itemslerinbabasi = useSelector(selectData); // o itemleri döndürür 
-
-const dispatch = useDispatch();
-
+    const plusButton = () =>
+    {
+                  dispatch(changeMainMoneyPozitif(props.data.fiyat))
+        dispatch(changePiecePozitif([props.data.id,'kerem']))   
+    }
+ const negativeButton = () =>
+    {
+    dispatch(changeMainMoneyNegative(props.data.fiyat))
+            dispatch(changePieceNegative([props.data.id,'kerem']))
+    }
 
     return ( 
-        <div className='jjdefrdf'>
-        <img src={props.data.img}/>
-        <h1>{props.data.title}</h1>
-        <p>ürün fiyatı: {props.data.fiyat}</p>
-        <p>bu üründen şu kadar alındı: {props.data.aded} </p>
-        <div>
-        <button onClick={
-           () => {
-            dispatch(arttiraded(props.data.fiyat))
-            dispatch(paradandus([props.data.id,'kerem']))
-           }
-        }>ana paradan 5 çıkart</button>
-             <button onClick={
-            () => console.log(gelendeger)
-        }>konsolda göster</button>
-        </div>
-     <p>{props.data.id}</p>
-    </div>
+        <İtemsCards>
+      
+      <İmg src={props.data.img} />
+<div>
+    <P>{props.data.title}</P>
+    <P>{props.data.fiyat}</P>
+    <İnnerDiv>
+    <Button onClick={plusButton}>+</Button>
+    <P>{props.data.aded}</P>
+    <Button onClick={negativeButton}>-</Button>
+    </İnnerDiv>
+</div>
+        </İtemsCards>
      );
 }
  
 export default CardsComponent;
-
-
-/*
-   <button onClick={
-            () => dispatch(azzaltFunciton())
-        }>-</button>
-
-   {
-            console.log(props.data[0].fiyat)
-        }
-
-*/

@@ -1,32 +1,39 @@
 
-import { useSelector } from 'react-redux';
-import { selectData,selectDatapara } from '../redux/cardSlice';
 
-import CardsComponent from "../components/CardsComponent";
+import {
+    Wrapper
+} from '../style/MainPageStayled'
+import CardsComponent from '../components/CardsComponent';
+import HeaderComponent from '../components/HeaderComponent';
+import MoneyComponent from '../components/MoneyComponent';
+import FooterComponent from '../components/FooterComponent';
+
+
+
+import { useSelector } from 'react-redux';
+import { selectİtems } from '../redux/cardSlice';
 
 const MainPage = () => {
+    const mainData = useSelector(selectİtems);
 
 
-    const gelendeger = useSelector(selectData);
-    const parayigoster = useSelector(selectDatapara);
-
-   // console.log(gelendeger)
     return ( 
-<>
-        main MainPage   {parayigoster}
+     <>
+         <HeaderComponent/>
+         <MoneyComponent/>
+       <Wrapper>
        
-        <hr/>
-
-<div className='jasdlkfj'>
-{
-gelendeger.map((dataf) => (
+       {
+mainData.map((dataf) => (
     <CardsComponent data={dataf} key={dataf.id} />
 ))
-}
+}         
 
-</div>
 
-</>
+       </Wrapper>
+        <FooterComponent/>
+     </>
+
      );
 }
  
