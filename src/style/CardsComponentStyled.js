@@ -30,9 +30,10 @@ text-align: center;
 font-size: 23px;
 `
 export const Button = styled.button`
-width: 60px;
+width: 50px;
+height: 50px;
 margin-left: 20px;
 margin-right: 20px;
 border-radius: 20%;
-background-color: green;
+background-color: #739900;
 `

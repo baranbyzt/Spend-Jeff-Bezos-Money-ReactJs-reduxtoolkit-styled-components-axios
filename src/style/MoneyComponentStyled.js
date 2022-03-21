@@ -15,6 +15,8 @@ background-color: #739900;
 margin-bottom: 20px;
 margin-left: auto;
 margin-right: auto;
+position: sticky;
+top: 0;
 `
 
 export const P = styled.p`

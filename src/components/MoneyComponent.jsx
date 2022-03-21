@@ -12,7 +12,7 @@ const MoneyComponent = () => {
 
     return ( 
         <Wrapper>
-      <P>{showMoney} $</P>
+      <P>{(showMoney).toLocaleString('ar-US')} $</P>
         </Wrapper>
      );
 }
