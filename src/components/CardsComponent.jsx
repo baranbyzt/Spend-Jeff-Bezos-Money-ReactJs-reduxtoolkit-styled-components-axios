@@ -1,7 +1,9 @@
 
 import { İtemsCards,İmg,İnnerDiv,
-    P,Button
+    P,Button1,Button2,
 } from "../style/CardsComponentStyled";
+
+import styles from '../style/General.module.css'
 
 import React,{useEffect,useState} from 'react'
 import { useDispatch,useSelector } from 'react-redux';
@@ -17,7 +19,7 @@ const CardsComponent = (props) => {
     {
         if(mainMoney >= props.data.fiyat){
                 dispatch(changeMainMoneyNegative(props.data.fiyat))
-                 dispatch(changePiecePozitif([props.data.id,'kerem']))  
+                 dispatch(changePiecePozitif([props.data.id,props.data.listofreceipt]))  
         }else{
 
         }
@@ -43,9 +45,9 @@ dispatch(changeMainMoneyPozitif(props.data.fiyat))
     <P>{props.data.title}</P>
     <P>{(props.data.fiyat).toLocaleString('ar-US')} $</P>
     <İnnerDiv>
-    <Button onClick={plusButton}>+</Button>
+    <Button1 onClick={plusButton}>Buy</Button1>
     <P>{props.data.aded}</P>
-    <Button onClick={negativeButton}>-</Button>
+    <Button2 className={props.data.aded == 0 ? styles.ButtonOpactiy : styles.ButtonOpactiy2} onClick={negativeButton}>Sell</Button2>
     </İnnerDiv>
 </div>
         </İtemsCards>
