@@ -11,7 +11,8 @@ export const cardSlice = createSlice({
             title: 'sinema bileti',
             img: "https://collegetrio.com/wp-content/uploads/2019/07/movie-tickets.jpg",
             fiyat: 20,
-            aded: 0
+            aded: 0,
+            listofreceipt: false
         },
         {
             id:2,
@@ -22,7 +23,7 @@ export const cardSlice = createSlice({
         },
         {
             id:3,
-            title: 'iPhone 12 Pro Max 512 GB',
+            title: 'iPhone 12 Pro',
             img: "https://128milyardolar.net/_assets/img/urun/iphone12.jpg",
             fiyat: 2500,
             aded: 0
@@ -92,14 +93,14 @@ export const cardSlice = createSlice({
         },
         {
             id:13,
-            title: 'Twitter',
+            title: 'Twitter   .',
             img: "https://128milyardolar.net/_assets/img/urun/twitter.jpg",
             fiyat: 41000000000,
             aded: 0
         },
         {
             id:14,
-            title: 'Space X Falcon 9 Rocket',
+            title: 'Falcon 9 ',
             img: "https://128milyardolar.net/_assets/img/urun/falcon9.jpg",
             fiyat: 90000000,
             aded: 0
@@ -119,6 +120,7 @@ export const cardSlice = createSlice({
     reducers:{
         changePiecePozitif: (state,action) => {
             const reis = action.payload[0]
+            const reis2 = action.payload[1]
             const dd = reis -1
            state.items[dd].aded += 1  
         },
