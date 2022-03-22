@@ -4,7 +4,6 @@ import { İtemsCards,İmg,İnnerDiv,
 } from "../style/CardsComponentStyled";
 
 import styles from '../style/General.module.css'
-
 import React,{useEffect,useState} from 'react'
 import { useDispatch,useSelector } from 'react-redux';
 import {changePieceNegative,changePiecePozitif,selectMoney,
