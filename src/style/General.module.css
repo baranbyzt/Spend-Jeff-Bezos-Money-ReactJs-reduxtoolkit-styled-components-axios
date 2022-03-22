@@ -43,3 +43,15 @@ margin-left: 20px;
 margin-right: 20px;
 border-radius: 20%;
 background-color: #ff1a1a;}
+
+.shopicon{
+    margin-left: 20px;
+}
+.timesicon{
+    position: absolute;
+    right: 5px;
+    top:5px;
+cursor: pointer;
+    width: 40px;
+    height: 40px;
+}

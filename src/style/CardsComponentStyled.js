@@ -35,13 +35,14 @@ height: 50px;
 margin-left: 20px;
 margin-right: 20px;
 border-radius: 20%;
+cursor: pointer;
 background-color: #739900;
 `
 export const Button2 = styled.button`
 width: 50px;
 height: 50px;
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 10px;
+margin-right: 10px;
 border-radius: 20%;
 background-color: #ff1a1a;
 `
