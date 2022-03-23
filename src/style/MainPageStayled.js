@@ -28,5 +28,4 @@ animation-duration: 1s;
     color: black;
     animation-duration: 1s;
 }
-
 `

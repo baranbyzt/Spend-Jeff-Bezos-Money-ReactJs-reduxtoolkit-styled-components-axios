@@ -1,11 +1,10 @@
 
-
+// our module css file
 import styles from '../style/General.module.css'
+// this is styled-components for css
 import {P} from '../style/FooterComponentStyled'
 
 const FooterİnnerComponent = (props) => {
-
-
     return ( 
   <>
         <div className={styles.footerWrapper}>
