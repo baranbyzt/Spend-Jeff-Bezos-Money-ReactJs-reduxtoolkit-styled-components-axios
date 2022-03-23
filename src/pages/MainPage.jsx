@@ -1,19 +1,22 @@
 
-
+// stylad-component
 import {
     Wrapper,StopSpending
 } from '../style/MainPageStayled'
+
+// our components
 import CardsComponent from '../components/CardsComponent';
 import HeaderComponent from '../components/HeaderComponent';
 import MoneyComponent from '../components/MoneyComponent';
 import FooterComponent from '../components/FooterComponent';
-
+// for use icon 
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+// redux-store select item
 import { useSelector } from 'react-redux';
+// our action
 import { selectİtems } from '../redux/cardSlice';
-
+// our module css
 import styles from '../style/General.module.css'
 
 const MainPage = () => {
@@ -47,16 +50,3 @@ mainData.map((dataf) => (
 }
  
 export default MainPage;
-
-/*
-
-  let close_portal = () => {
-    if(portal_root.style.visibility === "visible"){
-        portal_root.style.visibility == "hidden"
-    } else{
-        portal_root.style.visibility == "visible"
-    }
-        // portal_root.style.visibility="visible";
-      }
-
-*/

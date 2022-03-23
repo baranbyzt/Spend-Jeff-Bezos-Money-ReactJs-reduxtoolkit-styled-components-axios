@@ -1,17 +1,22 @@
 
+
+// our styled-component
 import { İtemsCards,İmg,İnnerDiv,
     P,Button1,Button2,
 } from "../style/CardsComponentStyled";
-
+// our module css
 import styles from '../style/General.module.css'
-import React,{useEffect,useState} from 'react'
+// we use it to add stickers to the global store
 import { useDispatch,useSelector } from 'react-redux';
+// our actions 
 import {changePieceNegative,changePiecePozitif,selectMoney,
     changeMainMoneyPozitif,changeMainMoneyNegative
 } from '../redux/cardSlice'
 
 const CardsComponent = (props) => {
+    // we are use dispatch for add store
     const dispatch = useDispatch();
+    // show money
     const mainMoney = useSelector(selectMoney)
 
     const plusButton = () =>

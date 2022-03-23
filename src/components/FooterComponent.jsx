@@ -1,10 +1,12 @@
 
-import {useState} from 'react';
 
+// our styled-component
 import {Wrapper,P_foter
 } from '../style/FooterComponentStyled'
+// our module css
 import styles from '../style/General.module.css'
 import { useSelector } from 'react-redux';
+// our actions
 import {selectİtems,selectMoney
 } from '../redux/cardSlice'
 import FooterİnnerComponent from './FooterİnnerComponent';
@@ -14,9 +16,9 @@ const FooterComponent = () => {
 
 
 
-    // itemları getirtir.
+    // get items
     const getİtemsData = useSelector(selectİtems);
-    // itemlerin listesini
+    // get item list
     const getMoneyData = useSelector(selectMoney);
 
 
@@ -25,8 +27,8 @@ const FooterComponent = () => {
         <Wrapper>
   <div className={styles.footerWrapper}>
   <p className={styles.p_wrapperr}>TİTLE</p> 
-<p className={styles.p_wrapperr}>ADED</p>
-<p className={styles.p_wrapperr}>TOPLAM FİYAT</p>
+<p className={styles.p_wrapperr}>piece</p>
+<p className={styles.p_wrapperr}>total price</p>
 
   </div>
   
@@ -35,21 +37,9 @@ getİtemsData.map((dataf) => (
     <FooterİnnerComponent data={dataf} key={dataf.id} />
 ))
 }   
-<P_foter> Harcanan toplam: {(187000000000-getMoneyData).toLocaleString('ar-US')}</P_foter>
+<P_foter> total spent: {(187000000000-getMoneyData).toLocaleString('ar-US')}</P_foter>
         </Wrapper>
      );
 }
  
 export default FooterComponent;
-
-// {(props.data.aded*props.data.fiyat).toLocaleString('ar-US')}
-// getMoneyData
-
-
-/*
-
-const [kissadan,useKisseden] = useState(null);
-useKisseden(187000000000-getMoneyData)
-
-
-*/

@@ -5,8 +5,9 @@ import styled from 'styled-components'
 
 
 export const Wrapper = styled.div`
-width: 80%;
-height: auto;
+width: 70%;
+height: 500px;
+overflow-y: scroll;
 margin-right: auto;
 margin-left: auto;
 background-color: #739900;
