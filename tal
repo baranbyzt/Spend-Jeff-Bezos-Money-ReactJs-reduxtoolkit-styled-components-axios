@@ -1,0 +1,128 @@
+[33mcommit 401022d59ff841709b548038ab535803a0be6e14[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Baran Beyazıt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Sat Mar 26 21:06:21 2022 +0300
+
+    Update README.md
+
+[33mcommit 3ba24b5fe1a16e2cc6adb373626c0e5c57cde205[m
+Author: Baran Beyazıt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Sat Mar 26 21:04:48 2022 +0300
+
+    Update README.md
+
+[33mcommit f19b0ca49cf2723151dcd96dc2ed754883ef00e5[m
+Merge: 58d1916 a042c5d
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Wed Mar 23 23:31:21 2022 +0300
+
+    Merge pull request #7 from baranbyzt/dev
+    
+    bugs fixed
+
+[33mcommit a042c5dad6207dea848d02cc019042f6f30351b4[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Wed Mar 23 23:29:56 2022 +0300
+
+    bugs fixed
+
+[33mcommit 58d1916db8965bc7fa0b31eefc5425cc232a91ab[m
+Merge: 212f920 b67ba7a
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Wed Mar 23 02:47:21 2022 +0300
+
+    Merge pull request #6 from baranbyzt/dev
+    
+    the project is completely completed
+
+[33mcommit b67ba7a2bc4227439706690206e0498ff03cea23[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Wed Mar 23 02:46:54 2022 +0300
+
+    the project is completely completed
+
+[33mcommit 212f9204363a7521baa051d138387980e132f3af[m
+Merge: b50c319 3a6dd84
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Tue Mar 22 23:12:43 2022 +0300
+
+    Merge pull request #5 from baranbyzt/dev
+    
+    project is finished
+
+[33mcommit 3a6dd8455b04991784fbf14fc3c89f5e0329ebf6[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Tue Mar 22 23:09:51 2022 +0300
+
+    project is finished
+
+[33mcommit b50c31943ee78aeacb5c037f01eb51dca28db571[m
+Merge: 8b923d9 caf763f
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Tue Mar 22 00:59:49 2022 +0300
+
+    Merge pull request #4 from baranbyzt/dev
+    
+    main project is finished
+
+[33mcommit caf763fb2acbcc8aad9fcdcb9b9671c178d86deb[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Tue Mar 22 00:06:10 2022 +0300
+
+    main project is finished
+
+[33mcommit 8b923d9845ddbe9935ace819d79a9a4acdc5d10a[m
+Merge: dd9e0d6 e1bb181
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Mon Mar 21 17:35:17 2022 +0300
+
+    Merge pull request #3 from baranbyzt/dev
+    
+    styles is finished but state is not finish
+
+[33mcommit e1bb1812f501be0b20306ee3a7d93e6e6c5ec577[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Mon Mar 21 17:34:42 2022 +0300
+
+    styles is finished but state is not finish
+
+[33mcommit dd9e0d6154fb8d47642682688601c0e4990b0068[m
+Merge: 17cf6cc 3260ca7
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Sun Mar 20 22:20:26 2022 +0300
+
+    Merge pull request #2 from baranbyzt/dev
+    
+    redux store v-0.5 is fihished
+
+[33mcommit 3260ca7ce5a64e8c5493a4bc3f29ca71d04c8924[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Sun Mar 20 22:18:59 2022 +0300
+
+    redux store v-0.5 is fihished
+
+[33mcommit 17cf6cc12100261b143b024f8836e88712f4ba75[m
+Merge: cf47209 21431b2
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Sun Mar 20 17:36:19 2022 +0300
+
+    Merge pull request #1 from baranbyzt/dev
+    
+    file layout edited
+
+[33mcommit 21431b2da22d85eaec5d6f4d9cfec621b6815572[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Sun Mar 20 17:35:41 2022 +0300
+
+    file layout edited
+
+[33mcommit cf472094c1fc4b17206d8061117ea136b4db0c4f[m
+Author: baran beyazıt <byztmain2121@gmail.com>
+Date:   Sat Mar 19 19:35:40 2022 +0300
+
+    first setup
+
+[33mcommit 1130be968c9a75e9c2980bbb82f8736d97603a06[m
+Author: baranbyzt <87334718+baranbyzt@users.noreply.github.com>
+Date:   Sat Mar 19 18:58:19 2022 +0300
+
+    Initial commit

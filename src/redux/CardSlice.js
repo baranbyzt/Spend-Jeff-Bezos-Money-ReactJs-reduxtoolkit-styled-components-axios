@@ -2,7 +2,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 
-export const cardSlice = createSlice({
+export const CardSlice = createSlice({
     name: 'cards',
     initialState:{
         // our items
@@ -148,7 +148,7 @@ export const selectMoney = state => state.cards.mainmoney;
 export const {
     changeMainMoneyPozitif,changeMainMoneyNegative,
     changePiecePozitif,changePieceNegative
-} = cardSlice.actions;
+} = CardSlice.actions;
 
-export default cardSlice.reducer;
+export default CardSlice.reducer;
 

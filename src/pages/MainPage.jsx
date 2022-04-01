@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // redux-store select item
 import { useSelector } from 'react-redux';
 // our action
-import { selectİtems } from '../redux/cardSlice';
+import { selectİtems } from '../redux/CardSlice';
 // our module css
 import styles from '../style/General.module.css'
 

@@ -8,7 +8,7 @@ import styles from '../style/General.module.css'
 import { useSelector } from 'react-redux';
 // our actions
 import {selectİtems,selectMoney
-} from '../redux/cardSlice'
+} from '../redux/CardSlice'
 import FooterİnnerComponent from './FooterİnnerComponent';
 
 

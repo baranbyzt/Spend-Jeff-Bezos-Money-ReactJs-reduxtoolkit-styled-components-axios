@@ -6,7 +6,7 @@ import {
 // we use it to add stickers to the global store
 import { useSelector } from "react-redux";
 // our money action
-import { selectMoney } from "../redux/cardSlice";
+import { selectMoney } from "../redux/CardSlice";
 
 const MoneyComponent = () => {
 // this is show our money in global store

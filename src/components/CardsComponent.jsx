@@ -11,7 +11,7 @@ import { useDispatch,useSelector } from 'react-redux';
 // our actions 
 import {changePieceNegative,changePiecePozitif,selectMoney,
     changeMainMoneyPozitif,changeMainMoneyNegative
-} from '../redux/cardSlice'
+} from '../redux/CardSlice'
 
 const CardsComponent = (props) => {
     // we are use dispatch for add store

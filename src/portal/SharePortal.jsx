@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSelector } from 'react-redux';
 // our actions
 import {selectMoney
-} from '../redux/cardSlice'
+} from '../redux/CardSlice'
 // fotter component
 import FooterComponent from '../components/FooterComponent'
 
