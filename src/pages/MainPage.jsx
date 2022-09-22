@@ -1,52 +1,40 @@
-
-// stylad-component
-import {
-    Wrapper,StopSpending
-} from '../style/MainPageStayled'
-
-// our components
-import CardsComponent from '../components/CardsComponent';
-import HeaderComponent from '../components/HeaderComponent';
-import MoneyComponent from '../components/MoneyComponent';
-import FooterComponent from '../components/FooterComponent';
-// for use icon 
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { Wrapper, StopSpending } from "../style/MainPageStayled";
+import CardsComponent from "../components/CardsComponent";
+import HeaderComponent from "../components/HeaderComponent";
+import MoneyComponent from "../components/MoneyComponent";
+import FooterComponent from "../components/FooterComponent";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// redux-store select item
-import { useSelector } from 'react-redux';
-// our action
-import { selectİtems } from '../redux/CardSlice';
-// our module css
-import styles from '../style/General.module.css'
+import { useSelector } from "react-redux";
+import { selectİtems } from "../redux/CardSlice";
+import styles from "../style/General.module.css";
 
 const MainPage = () => {
-    const mainData = useSelector(selectİtems);
+  const mainData = useSelector(selectİtems);
+  let portalRoot = document.getElementById("portal");
+  let openPortal = () => {
+    portalRoot.style.visibility = "visible";
+  };
 
-let portal_root = document.getElementById('portal');
-let open_portal = () => {
-    portal_root.style.visibility="visible";
-  }
- 
-    return ( 
-     <div >
-         <HeaderComponent/>
-         <MoneyComponent/>
-       <Wrapper>
+  return (
+    <div>
+      <HeaderComponent />
+      <MoneyComponent />
 
-       {
-mainData.map((dataf) => (
-    <CardsComponent data={dataf} key={dataf.id} />
-))
-}         
+      <Wrapper>
+        {mainData.map((getData) => (
+          <CardsComponent data={getData} key={getData.id} />
+        ))}
+      </Wrapper>
 
-       </Wrapper>
-        <FooterComponent/>
-        <StopSpending onClick={open_portal}>Stop Spending 
+      <FooterComponent />
+
+      <StopSpending onClick={openPortal}>
+        Stop Spending
         <FontAwesomeIcon className={styles.shopicon} icon={faShoppingCart} />
-        </StopSpending>
-     </div>
+      </StopSpending>
+    </div>
+  );
+};
 
-     );
-}
- 
 export default MainPage;
