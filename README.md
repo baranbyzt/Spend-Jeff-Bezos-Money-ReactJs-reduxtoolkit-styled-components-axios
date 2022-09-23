@@ -1,11 +1,28 @@
-# Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios
 
-<p>In this project, we are trying to finish jeff bezos' money with various intems. Our main goal in this project is to develop a web project using redux toolkit and styled-components.
-<p/>
+# e-commerce-react-redux-toolkit
 
-<h3> images </h3>
-<img src='https://raw.githubusercontent.com/baranbyzt/Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios/main/src/screenshot/example1.PNG' />
-</hr>
-<img src='https://raw.githubusercontent.com/baranbyzt/Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios/main/src/screenshot/example2.PNG' />
-</hr>
-<img src='https://raw.githubusercontent.com/baranbyzt/Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios/main/src/screenshot/example3.PNG' />
+We are working on this project by spending Jeff Bezos' money on various products. Our main goal in this project is to develop a web project using redux toolset and styling components.
+
+## Try it Now 
+https://spend-jeff-bezos-money.vercel.app/
+## Installation
+
+  Install Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios with npm
+```bash
+  cd Spend-Jeff-Bezos-Money-ReactJs-reduxtoolkit-styled-components-axios
+  npm install 
+  npm start
+```
+    
+
+
+
+
+    
+## 🔗 Links
+
+![Ekran Resmi 2022-09-23 ÖS 1 46 46](https://user-images.githubusercontent.com/87334718/191944898-b088f791-2cc5-4ee8-80dd-5ead2980398f.png)
+
+![Ekran Resmi 2022-09-23 ÖS 1 47 13](https://user-images.githubusercontent.com/87334718/191944913-52075a62-6f93-4dd6-b970-34e7aabad7e7.png)
+
+![Ekran Resmi 2022-09-23 ÖS 1 47 27](https://user-images.githubusercontent.com/87334718/191944920-86bc063f-3bb5-4c19-9aa0-02c568ee7193.png)
